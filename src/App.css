@@ -1,9 +1,16 @@
+@import url('https://css.gg/remove.css');
+
 .App {
-  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
 }
 
@@ -11,17 +18,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -32,7 +28,77 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.Clock {
+  position: absolute;
+  right: calc(20px + 2vmin);
+  font-size: calc(12px + 1vmin);
+}
+
+.List-border {
+  border: 2px solid #61dafb;
+  border-radius: 10px;
+  width: 30%;
+  padding: 10px;
+  list-style: none;
+}
+
+.Input {
+  color: black;
+  font-size: calc(12px + 1vmin);
+  border: 2px solid whitesmoke;
+  padding: 5px;
+}
+
+.Button {
+  font-size: calc(12px + 1vmin);
+  background-color: #61dafb;
+  border-color: white;
+  padding: 5px;
+  width: 40px;
+}
+
+.List-item {
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  clear: both;
+}
+
+.List-item button {
+  float: right;
+  font-size: calc(10px + 1vmin);
+  margin-left: 10px;
+  border-radius: 5px;
+  transform: translateY(25%);
+  border: none;
+}
+
+.Delete-button {
+  background-color: red;
+}
+
+.Edit-button {
+  background-color: sandybrown;
+}
+
+.Complete-item {
+  background-color: green;
+}
+
+.Uncomplete-item {
+  background-color: gray;
+}
+
+li input {
+  font-size: calc(10px + 1vmin);
+  transform: translateY(-20%);
+  background: transparent;
 }
